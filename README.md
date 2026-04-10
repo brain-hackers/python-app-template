@@ -33,3 +33,10 @@ The final directory tree of an SD card will look like this:
 ```
 
 For a reference, the "hello_world.zip" in GitHub Release page is useful to check if your build is correct, and if the minimal app works on your e-dictionary.
+
+
+# License
+
+[The Unlicense](/LICENSE)
+
+Everthing in this template repository is considered Public Domain. You can alter the license agreement entirely and use any license you prefer.
