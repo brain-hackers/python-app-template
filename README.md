@@ -22,7 +22,7 @@ The final directory tree of an SD card will look like this:
 ```
 ./
 └── アプリ/
-    └── PyAppLauncher/
+    └── Hello World/
         ├── app/
         │   └── __main__.py*
         ├── AppMain_.exe*
