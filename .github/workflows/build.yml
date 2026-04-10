@@ -1,0 +1,26 @@
+name: Release App
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run pack script
+        run: ./pack.sh
+
+      - name: Archive directory
+        run: zip -r "hello_world.zip" "Hello World"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: hello_world.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
